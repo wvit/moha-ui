@@ -1,5 +1,5 @@
 {
-  "name": "moha",
+  "name": "moha-ui",
   "version": "0.0.1",
   "description": "基于react-color的colorPicker组件",
   "main": "dist/main.js",
