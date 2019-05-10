@@ -3,6 +3,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'production',
+  watch: true,
   entry: './src/main.jsx',
   output: {
     filename: '[name].js',
