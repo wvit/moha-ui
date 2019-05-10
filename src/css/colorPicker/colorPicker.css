@@ -2,6 +2,7 @@
     display: inline-block;
     border-radius: 5px;
     position: relative;
+    cursor: pointer;
 }
 
 .btn-medium {

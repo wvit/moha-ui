@@ -3,4 +3,4 @@
 ## colorPicker
 ### 基于react-color
 
-import {colorPicker} from 'moha-ui'
+import { colorPicker } from 'moha-ui'

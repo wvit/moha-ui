@@ -8,23 +8,22 @@ class ColorPicker extends React.Component {
     this.state = {
       //弹出开关
       showOnOff: false,
-      //颜色值
-      colorValue: 'red',
     }
   };
-  render () {
-    const { size, type = 'BlockPicker' } = this.props;
+  render() {
+    //按钮大小和拾取器类型
+    const { size, type = 'BlockPicker', color = 'red' } = this.props;
     return (
       <div>
         <div
           className={`colorPicker-btn ${size === 'small' ? 'btn-small' : 'btn-medium'}`}
-          style={{ background: this.state.colorValue }}
+          style={{ background: color }}
           onClick={this.showHideColorPicker.bind(this)}
         >
           <div className={`BlockPicker-wrap ${this.state.showOnOff ? type : ''}-wrap-show`}>
             <BlockPicker
-              className="BlockPicker" color={this.state.colorValue}
-              onChange={this.colorChange.bind(this)}
+              className="BlockPicker" color={color}
+              onChange={this.props.colorChange}
             />
           </div>
         </div>
@@ -32,23 +31,21 @@ class ColorPicker extends React.Component {
     )
   }
   //监听dom挂载完毕
-  componentDidMount () {
+  componentDidMount() {
     document.addEventListener('click', () => {
       this.setState({ showOnOff: false })
     })
   }
+  //监听卸载
+  componentWillUnmount() {
+    this.setState = () => { };
+  }
   //颜色选择器的显示与隐藏
-  showHideColorPicker (ev) {
+  showHideColorPicker(ev) {
     ev.nativeEvent.stopImmediatePropagation()
     if (ev.target.classList.contains('colorPicker-btn')) {
       this.setState({ showOnOff: !this.state.showOnOff })
     }
-  }
-  //选择颜色
-  colorChange (ev) {
-    this.setState({
-      colorValue: ev.hex
-    })
   }
 }
 
