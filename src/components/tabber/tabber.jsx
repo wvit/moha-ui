@@ -5,7 +5,6 @@ import '../../css/tabber/tabber.css';
 class Tabber extends React.Component {
   render() {
     const { tabberConfig } = this.props;
-    console.log()
     return (
       <BrowserRouter>
         <Switch>

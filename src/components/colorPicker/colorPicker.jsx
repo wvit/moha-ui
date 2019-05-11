@@ -23,7 +23,7 @@ class ColorPicker extends React.Component {
           <div className={`BlockPicker-wrap ${this.state.showOnOff ? type : ''}-wrap-show`}>
             <BlockPicker
               className="BlockPicker" color={color}
-              onChange={this.props.colorChange}
+              onChange={this.props.onChange}
             />
           </div>
         </div>

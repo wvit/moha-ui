@@ -1,5 +1,6 @@
-import { ColorPicker } from './components/colorPicker/colorPicker.jsx'
-import { Tabber } from './components/tabber/tabber.jsx'
+import ColorPicker from './components/colorPicker/colorPicker.jsx'
+import Tabber from './components/tabber/tabber.jsx'
+import Title from './components/title/title.jsx'
 import './css/main.css'
 
-exports.moha = { ColorPicker, Tabber }
+exports = { ColorPicker, Tabber, Title }
