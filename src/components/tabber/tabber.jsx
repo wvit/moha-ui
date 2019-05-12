@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter, NavLink, Switch, Route, Redirect } from 'react-router-dom';
-import '../../css/tabber/tabber.css';
+import '../../assets/css/tabber.css';
 
 class Tabber extends React.Component {
-  render() {
+  render () {
     const { tabberConfig } = this.props;
     return (
       <BrowserRouter>
@@ -40,4 +40,4 @@ class Tabber extends React.Component {
   }
 }
 
-exports.Tabber = Tabber
+export default Tabber

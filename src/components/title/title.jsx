@@ -1,9 +1,9 @@
 import React from 'react';
 import { createBrowserHistory } from 'history'
-import '../../css/title/title.css'
+import '../../assets/css/title.css'
 
 class Title extends React.Component {
-  render() {
+  render () {
     const { titleName } = this.props;
     const history = createBrowserHistory();
     return (
@@ -17,4 +17,4 @@ class Title extends React.Component {
   }
 }
 
-exports.Title = Title
+export default Title
