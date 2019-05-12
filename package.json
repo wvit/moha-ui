@@ -1,6 +1,6 @@
 {
   "name": "moha-ui",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "react组件包",
   "main": "dist/main.js",
   "scripts": {
