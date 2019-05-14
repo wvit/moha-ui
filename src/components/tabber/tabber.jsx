@@ -3,8 +3,8 @@ import { BrowserRouter, NavLink, Switch, Route, Redirect } from 'react-router-do
 import '../../assets/css/tabber.css';
 
 class Tabber extends React.Component {
-  render () {
-    const { tabberConfig } = this.props;
+  render() {
+    const { tabberConfig, activeClassName, className } = this.props;
     return (
       <BrowserRouter>
         <Switch>
@@ -26,7 +26,8 @@ class Tabber extends React.Component {
                   }}
                 >
                   <NavLink
-                    activeClassName='active'
+                    activeClassName={`active ${activeClassName}`}
+                    className={`tabber-link ${className}`}
                     to={item.path}>
                     {item.name}
                   </NavLink>
