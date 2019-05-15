@@ -1,5 +1,8 @@
 .head-title {
-  position: relative;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
   background: red;
 }
 

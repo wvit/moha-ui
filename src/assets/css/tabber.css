@@ -1,4 +1,4 @@
-.tabber-wrap {
+.tabber-wrap ul {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -12,12 +12,29 @@
 .tabber-link {
   display: block;
   text-align: center;
-  line-height: 40px;
+  line-height: 16px;
   color: #fff;
-  background: red;
+  font-size: 16px;
+  padding: 6px 0;
 }
 
-.tabber-link.active {
-  color: red;
-  background: #fff;
+.tabber-link span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.tabber-link span img {
+  width: 16px;
+}
+
+.tabber-active-icon {
+  display: none;
+}
+
+.active .tabber-icon {
+  display: none;
+}
+
+.active .tabber-active-icon {
+  display: inline-block;
 }
