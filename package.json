@@ -30,7 +30,7 @@
     "clean-webpack-plugin": "^2.0.2",
     "history": "^4.9.0",
     "react": "^16.8.6",
-    "react-color-moha": "0.0.1",
+    "react-color-moha": "0.0.2",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
     "url-loader": "^1.1.2",
