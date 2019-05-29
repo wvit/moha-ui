@@ -1,14 +1,10 @@
-.head-wrap {
-  position: relative;
-  z-index: 9999;
-}
-
 .head-title {
   position: fixed;
   width: 100%;
   left: 0;
   top: 0;
   background: red;
+  z-index: 9999;
 }
 
 .head-back {
