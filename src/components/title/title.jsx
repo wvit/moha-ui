@@ -1,11 +1,11 @@
 import React from 'react';
 import { createBrowserHistory } from 'history'
 import util from '../../assets/js/util.js'
-import '../../assets/css/title.css'
+import './title.css'
 
 class Title extends React.Component {
   render() {
-    const { titleName, className } = this.props;
+    const { titleName, className, children } = this.props;
     const history = createBrowserHistory();
     return (
       <div className="head-wrap">
@@ -14,6 +14,9 @@ class Title extends React.Component {
           <span className="head-back" onClick={() => { history.goBack() }}></span>
           <p className="head-text">
             {titleName}
+          </p>
+          <p className="title-other">
+            {children}
           </p>
         </div>
       </div>

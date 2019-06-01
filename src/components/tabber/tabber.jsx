@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, NavLink, Switch, Route, Redirect } from 'react-router-dom';
 import util from '../../assets/js/util.js';
-import '../../assets/css/tabber.css';
+import './tabber.css';
 
 class Tabber extends React.Component {
   render() {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { BlockPicker } from 'react-color-moha'
-import '../../assets/css/colorPicker.css'
+import './colorPicker.css'
 
 class ColorPicker extends React.Component {
   constructor(props) {
@@ -10,7 +10,7 @@ class ColorPicker extends React.Component {
       showOnOff: false,
     }
   };
-  render () {
+  render() {
     //按钮大小和拾取器类型
     const { size, type = 'BlockPicker', color = 'red' } = this.props;
     return (
@@ -31,17 +31,17 @@ class ColorPicker extends React.Component {
     )
   }
   //监听dom挂载完毕
-  componentDidMount () {
+  componentDidMount() {
     document.addEventListener('click', () => {
       this.setState({ showOnOff: false })
     })
   }
   //监听卸载
-  componentWillUnmount () {
+  componentWillUnmount() {
     this.setState = () => { };
   }
   //颜色选择器的显示与隐藏
-  showHideColorPicker (ev) {
+  showHideColorPicker(ev) {
     ev.nativeEvent.stopImmediatePropagation()
     if (ev.target.classList.contains('colorPicker-btn')) {
       this.setState({ showOnOff: !this.state.showOnOff })
