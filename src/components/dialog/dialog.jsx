@@ -17,7 +17,7 @@ class Dialog extends React.Component {
         <div className={`dialog ${visible ? 'fadeInDown' : 'fadeOutDown'}`} style={animationDuration} onClick={ev => { ev.stopPropagation() }}>
           <div className="clearfix dialog-head">
             <p className="title-text">{title}</p>
-            <span className="close" onClick={this.props.onClose}></span>
+            <span className="close icon icon-close" onClick={this.props.onClose}></span>
           </div>
           <div className="clearfix dialog-body">
             {children}

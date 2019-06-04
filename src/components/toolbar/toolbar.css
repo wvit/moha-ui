@@ -1,0 +1,23 @@
+.toolbar-wrap {
+  position: fixed;
+  width: 100%;
+  top: 60px;
+  box-shadow: 0 1px 3px #999;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.toolbar-wrap .show-btn {
+  float: left;
+  width: 30px;
+  font-size: 20px;
+  text-align: center;
+  transition: 0.5s;
+  margin-top: 5px;
+}
+
+.toolbar {
+  width: calc(100vw - 40px);
+  overflow-x: scroll;
+  padding: 5px 0;
+}
