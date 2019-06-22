@@ -15,9 +15,9 @@ class Title extends React.Component {
           <p className="head-text">
             {titleName}
           </p>
-          <p className="title-other">
+          <div className="title-other">
             {children}
-          </p>
+          </div>
         </div>
       </div>
     )
