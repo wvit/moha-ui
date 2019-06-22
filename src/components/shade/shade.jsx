@@ -9,7 +9,8 @@ const defaultStyle = {
   background: 'rgba(0, 0, 0, 0.5)',
   width: '100vw',
   height: '100vh',
-  zIndex: 999
+  zIndex: 999,
+  animationDuration: '200ms'
 }
 
 class Shade extends React.Component {
@@ -19,7 +20,7 @@ class Shade extends React.Component {
     return (
       <div
         className={`shade-wrap animated ${visible ? 'fadeIn' : 'fadeOut'} ${className}`}
-        style={Object.assign({}, defaultStyle, style)}
+        style={Object.assign(defaultStyle, style)}
         onClick={onClose}
       >
         {children}

@@ -17,7 +17,8 @@
 }
 
 .toolbar {
-  width: calc(100vw - 40px);
+  float: left;
+  max-width: calc(100vw - 40px);
   overflow-x: scroll;
   padding: 5px 0;
 }

@@ -23,7 +23,6 @@ class Sidebar extends React.Component {
         className='menuBar-wrap'
         visible={visible}
         onClose={this.props.onClose}
-        style={animationDuration}
       >
         <div
           className={`menuBar-container ${visible ? 'fadeInRight' : 'fadeOutRight'}`}

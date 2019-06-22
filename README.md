@@ -2,6 +2,6 @@
 
 npm install moha-ui
 
-import { ColorPicker,Dialog,Title,Tabber,Sidebar,util } from 'moha-ui'
+import { ColorPicker,Dialog,Title,Tabber,Sidebar,Shade,util } from 'moha-ui'
 
 ## 文档 https://1wei.cc

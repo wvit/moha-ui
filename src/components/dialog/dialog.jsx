@@ -12,7 +12,6 @@ class Dialog extends React.Component {
         className='dialog-wrap'
         visible={visible}
         onClose={this.props.onClose}
-        style={animationDuration}
       >
         <div className={`dialog ${visible ? 'fadeInDown' : 'fadeOutDown'}`} style={animationDuration} onClick={ev => { ev.stopPropagation() }}>
           <div className="clearfix dialog-head">
