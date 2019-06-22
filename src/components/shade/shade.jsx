@@ -20,7 +20,7 @@ class Shade extends React.Component {
     return (
       <div
         className={`shade-wrap animated ${visible ? 'fadeIn' : 'fadeOut'} ${className}`}
-        style={Object.assign(defaultStyle, style)}
+        style={Object.assign({}, defaultStyle, style)}
         onClick={onClose}
       >
         {children}
